@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Sorteio de Números</title>
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.0.1"></script>
+</head>
+<body>
+  <div class="container">
+    <h1>Sorteio de Números</h1>
+    <label for="min">Número Mínimo:</label>
+    <input type="number" id="min" min="1" placeholder="Mínimo">
+    <label for="max">Número Máximo:</label>
+    <input type="number" id="max" min="1" placeholder="Máximo">
+    <label for="quantidade">Quantidade de Números:</label>
+    <input type="number" id="quantidade" min="1" placeholder="Quantidade">
+    <div class="button-container">
+      <button onclick="sortearNumero()">Sortear</button>
+    </div>
+    <h2 id="resultado"></h2>
+
+    <!-- Adição da área para exibir o histórico -->
+    <div class="historico-container">
+      <h2>Histórico</h2>
+      <ul id="historico"></ul>
+    </div>
+  </div>
+
+  <footer class="footer">
+    Francisco Fernando || Todos os direitos reservados ©
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
